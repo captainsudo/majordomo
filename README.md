@@ -1,4 +1,4 @@
-# QuickStart
+# MajorDomo
 HTML5, Sass, Bootstrap Grid, Gulp Server
 
 `npm install`  
