@@ -1,7 +1,6 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     sass = require('gulp-sass'),
-    concat = require('gulp-concat'),
     browserSync = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
@@ -40,13 +39,7 @@ gulp.task('css', function () {
 });
 
 gulp.task('js',function(){
-  gulp.src([
-     'src/js/vendor/angular.min.js',
-     'src/js/vendor/slick.min.js',
-      'src/js/scripts.js',
-      'src/js/app.js',
-    ])
-    .pipe(concat('scripts.js'))
+  gulp.src('src/js/scripts.js')
     .pipe(sourcemaps.init())
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
