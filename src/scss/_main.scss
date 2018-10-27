@@ -10,9 +10,13 @@ body {
     
   }
 }
+
 section.wizard-wrapper {}
 
 .header {
+  .title{
+    font-size: 24px;
+  }
 
   height: 45px;
   //background: #5593f3;
@@ -46,23 +50,23 @@ section.wizard-wrapper {}
   padding: 10px;
   display: flex !important;
   flex-flow: column;
-  margin: 0 auto;
+  // margin: 0 auto;
   width: 100%;
   border-radius: 5px;
   background: #fff;
-  width: 100%;
+  //width: 100%;
   @media screen and (min-width: 990px) {
     flex-flow: row;
-    width: 700px;
+    //width: 700px !important;
   }
 
-  img {
-    width: 100%;
+  .image {
+    width: 50%;
     max-height: 200px;
     height: 200px;
-    //background: url('https://via.placeholder.com/350x200') no-repeat top left;
+    background: url('https://via.placeholder.com/350x200') no-repeat top left;
 
-   // background-size: 100% 100%;
+   background-size: 100% 100%;
     @media screen and (min-width: 990px) {
       max-height: 100%;
       height: auto;

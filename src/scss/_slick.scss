@@ -98,3 +98,24 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+ 
+//overrides
+.slick-slide{
+  // margin-left:50px;
+  // margin: 0 25px;
+    &:first-child{
+        margin-left: 0;
+    }
+    &:not(.slick-current){
+        opacity: .8;
+        filter: blur(2px);
+    }
+}
+
+.slick-prev,.slick-next{
+    display: none !important;
+}
+.slick-list{
+    overflow: unset !important;
+    
+}

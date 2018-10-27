@@ -11,13 +11,13 @@
 
   <link href="//www.google-analytics.com" rel="dns-prefetch">
   <link href="//ajax.googleapis.com" rel="dns-prefetch">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet"> -->
   <link href="assets/css/style.min.css" rel="stylesheet">
 
   <script src="assets/components/modernizr/modernizr.js"></script>
   <script src="assets/components/jquery/jquery.min.js"></script>
   <script src="assets/js/scripts.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
 </head>
 
 <body ng-controller="mainController">
@@ -55,9 +55,9 @@
       </div>
 
       <div class="wizard">
-        <div class="slide">
+        <div class="slide" style="margin:15px">
           <div class="image">
-            <img src="https://via.placeholder.com/350x200" alt="image">
+            <!-- <img src="https://via.placeholder.com/350x200" alt="image"> -->
           </div>
           <div class="question-wrapper">
             <div class="question">
@@ -74,14 +74,14 @@
               <button class="btn-blue">Poor</button>
             </div>
             <div class="cta-wrapper">
-              <button class="selected">NEXT</button>
-              <button>BACK</button>
+              <button class="selected next-btn" onclick="nextSlide()">NEXT</button>
+              <button onclick="prevSlide()">BACK</button>
             </div>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide" style="margin:15px">
           <div class="image">
-            <img src="https://via.placeholder.com/350x200" alt="image">
+            <!-- <img src="https://via.placeholder.com/350x200" alt="image"> -->
           </div>
           <div class="question-wrapper">
             <div class="question">
@@ -98,14 +98,14 @@
               <button class="btn-blue">Poor</button>
             </div>
             <div class="cta-wrapper">
-              <button class="selected">NEXT</button>
-              <button>BACK</button>
+              <button class="selected next-btn" onclick="nextSlide()">NEXT</button>
+              <button onclick="prevSlide()">BACK</button>
             </div>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide" style="margin:15px;">
           <div class="image">
-            <img src="https://via.placeholder.com/350x200" alt="image">
+            <!-- <img src="https://via.placeholder.com/350x200" alt="image"> -->
           </div>
           <div class="question-wrapper">
             <div class="question">
@@ -122,8 +122,8 @@
               <button class="btn-blue">Poor</button>
             </div>
             <div class="cta-wrapper">
-              <button class="selected">NEXT</button>
-              <button>BACK</button>
+              <button class="selected next-btn" onclick="nextSlide()">NEXT</button>
+              <button onclick="prevSlide()">BACK</button>
             </div>
           </div>
         </div>
